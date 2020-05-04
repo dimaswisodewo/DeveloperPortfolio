@@ -86,6 +86,36 @@
 								<div class="image main"><img src="images/spacequizvr/6.jpeg" alt="" /></div>
 								<div class="image main"><img src="images/spacequizvr/7.jpeg" alt="" /></div>
 								<div class="image main"><img src="images/spacequizvr/8.jpeg" alt="" /></div>
+								<hr/>
+								<h2>Video</h2>
+								<div style="text-align:center"> 
+									<button onclick="playPause()">Play/Pause</button>
+									<br><br>
+									<video class="cihuyrotate" id="video1" width="420">
+									  	<source src="videos/quiz-space-vr.mp4" type="video/mp4">
+										<source src="videos/quiz-space-vr.ogg" type="video/ogg">
+										Your browser does not support HTML video.
+									</video>
+								</div> 
+								<style>
+									video.cihuyrotate {
+										/* transform:rotate(-90deg); */
+										max-width: 100%;
+									  	height: auto;
+									}
+								</style>
+								<script> 
+									var myVideo = document.getElementById("video1"); 
+									myVideo.width = 320;
+
+									function playPause() { 
+										if (myVideo.paused) 
+										myVideo.play(); 
+										else 
+										myVideo.pause(); 
+									} 
+									
+								</script>
 							</section>
 
 					</div>
