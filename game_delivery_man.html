@@ -71,7 +71,37 @@
                                     so the enemy can chase the player.</p>
                                 <ul class="actions">
                                     <li><a href="https://github.com/dimaswisodewo/Game_KPUMan-" class="button primary icon brands solid fa-github">Source Code</a></li>
-                                </ul>
+								</ul>
+								<hr/>
+								<h2>Video</h2>
+								<div style="text-align:center"> 
+									<button onclick="playPause()">Play/Pause</button>
+									<br><br>
+									<video class="cihuy" id="video1" width="420">
+									  	<source src="videos/delivery-man.mp4" type="video/mp4">
+										<source src="videos/delivery-man.ogg" type="video/ogg">
+										Your browser does not support HTML video.
+									</video>
+								</div> 
+								<style>
+									video.cihuy {
+									  max-width: 100%;
+									  height: auto;
+									}
+								</style>
+								<script> 
+									var myVideo = document.getElementById("video1"); 
+									myVideo.width = 320;
+
+									function playPause() { 
+										if (myVideo.paused) 
+										myVideo.play(); 
+										else 
+										myVideo.pause(); 
+									} 
+									
+								</script> 
+
 							</section>
 
 					</div>
