@@ -2638,6 +2638,14 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.image.kotak {
+			display: block;
+			margin: 2.5rem 0;
+			width: 100%!important;
+			max-height: 200px;
+			overflow: auto;
+		}
+
 		.image.cihuy {
 			display: block;
 			margin-left: auto;
